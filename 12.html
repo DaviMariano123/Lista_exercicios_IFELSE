@@ -11,10 +11,27 @@
 
     //ENTRADA
 
-    
-    //PROCESSAMENTO
+     const idade = Number(prompt(`Qual a idade do seu cachorro?`))
+    const porte = prompt(`Qual o porte do seu cachorro?`).toUpperCase().trim()
+    const pequeno = idade * 5
+    const medio = idade * 6
+    const grande = idade * 7
 
-    
+  //PROCESSAMENTO
+
+    if (porte == "PEQUENO") {
+        alert(`Seu cachorro tem ${pequeno} anos em idade humana`)
+    }
+    else if (porte == "MÉDIO") {
+        alert(`Seu cachorro tem ${medio} anos em idade humana`)
+    }
+    else if (porte == "GRANDE") {
+        alert(`Seu cachorro tem ${grande} anos em idade humana`)
+    }
+    else {
+        alert(`Informe o que é pedido!`)
+    }
+
     //SAÍDA
 
 </script>

@@ -12,10 +12,45 @@
 
     //ENTRADA
 
+    const pergunta1 = prompt(`Telefonou para vítima?(Responda com sim ou não)`).toUpperCase().trim()
+    const pergunta2 = prompt(`Você esteve no local do crime?(Responda com sim ou não)`).toUpperCase().trim()
+    const pergunta3 = prompt(`Mora perto da vítima?(Responda com sim ou não)`).toUpperCase().trim()
+    const pergunta4 = prompt(`Devia para vítima?(Responda com sim ou não)`).toUpperCase().trim()
+    const pergunta5 = prompt(`Já trabalhou com a vítima?(Responda com sim ou não)`).toUpperCase().trim()
 
     //PROCESSAMENTO
 
-    
+    let contador = 0
+
+    if (pergunta1 == "SIM") {
+        contador ++
+    }
+    if (pergunta2 == "SIM") {
+        contador ++
+    }
+    if (pergunta3 == "SIM") {
+        contador ++
+    }
+    if (pergunta4 == "SIM") {
+        contador ++
+    }
+    if (pergunta5 == "SIM") {
+        contador ++
+    }
+   
+    if (contador == 3 || contador == 4) {
+        alert(`Você é cumplice`)
+    }
+    else if (contador == 1 || contador == 2){
+        alert(`Você é suspeito`)
+    }
+    else if (contador == 5) {
+        alert(`Você é considerado assassino`)
+    }
+    else {
+        alert(`Você é inocente`)
+    }
+
     //SAÍDA
 
 </script>
